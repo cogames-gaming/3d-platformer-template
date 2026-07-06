@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddy3d3ccwlhst"]
+
+[ext_resource type="PackedScene" uid="uid://h2epcp7maugu" path="res://src/platform.tscn" id="1_xlegt"]
+[ext_resource type="PackedScene" uid="uid://gqsa4as6asj3" path="res://src/player.tscn" id="2_0qwtu"]
+
+[node name="World" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0995522, 1.32111, 0.588984)
+
+[node name="platform" parent="." instance=ExtResource("1_xlegt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0412422, 0, -0.215711)
+
+[node name="platform2" parent="." instance=ExtResource("1_xlegt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0824845, 2.5865, -11.4065)
+
+[node name="platform3" parent="." instance=ExtResource("1_xlegt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1237, 5, 2.35287)
+
+[node name="Player" parent="." instance=ExtResource("2_0qwtu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00966156, 7.17702, 0.0154999)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.938427, 0.345478, 0, -0.345478, 0.938427, -4.34145, 2.63995, -8.37089)
+light_color = Color(0.659159, 0.738413, 1, 1)
+light_bake_mode = 0
+sky_mode = 1
