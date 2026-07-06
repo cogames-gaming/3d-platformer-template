@@ -13,13 +13,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0412422, 0, -0.215711)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0824845, 2.5865, -11.4065)
 
 [node name="platform3" parent="." instance=ExtResource("1_xlegt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1237, 5, 2.35287)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8803, 5.03323, 0.588722)
+
+[node name="platform4" parent="." instance=ExtResource("1_xlegt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0934, 7.51641, -10.3572)
 
 [node name="Player" parent="." instance=ExtResource("2_0qwtu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00966156, 7.17702, 0.0154999)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.938427, 0.345478, 0, -0.345478, 0.938427, -4.34145, 2.63995, -8.37089)
-light_color = Color(0.659159, 0.738413, 1, 1)
-light_bake_mode = 0
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.094925, 0.995484, 0, -0.995484, -0.094925, -5.4579, 17.1366, -15.7963)
+light_color = Color(0.701961, 1, 1, 1)
+shadow_enabled = true
 sky_mode = 1
