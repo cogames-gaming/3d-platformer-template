@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="demo project platformer"
-config/tags=PackedStringArray("3d", "in_development", "platformer", "template")
+config/tags=PackedStringArray("3d", "platformer", "template")
 run/main_scene="uid://ddy3d3ccwlhst"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
